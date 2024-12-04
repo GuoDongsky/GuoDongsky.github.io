@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>郭栋的个人简历</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            color: #333;
+            background: #f4f4f9;
         }
         header {
-            background: #333;
+            background: #3f51b5;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+        }
         .container {
             max-width: 800px;
             margin: 20px auto;
+            background: #fff;
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
-            color: #333;
+        h2 {
+            color: #3f51b5;
+            border-bottom: 2px solid #3f51b5;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .contact a {
+            color: #3f51b5;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
         }
     </style>
 </head>
@@ -32,23 +58,66 @@
         <h1>郭栋的个人简历</h1>
     </header>
     <div class="container">
-        <h2>关于我</h2>
-        <p>你好！我是郭栋，一名热爱学习和成长的个人。</p>
+        <h2>个人简介</h2>
+        <ul>
+            <li>AGI坚定信仰者</li>
+            <li>GPT4重度用户，善用GitHub，了解Transformer和RAG</li>
+            <li>熟悉Python，具备本地化部署LLM经验</li>
+            <li>每日关注AI前沿进展</li>
+            <li>2年海外科技创业公司招聘HR经验</li>
+            <li>3年猎头背景，专注中高端岗位招聘</li>
+        </ul>
+
         <h2>联系方式</h2>
-        <ul>
-            <li>Email: your-email@example.com</li>
-            <li>GitHub: <a href="https://github.com/your-username">https://github.com/your-username</a></li>
+        <ul class="contact">
+            <li>📧 Email: <a href="mailto:540179312@qq.com">540179312@qq.com</a></li>
+            <li>📱 电话: 15301911102</li>
         </ul>
-        <h2>技能</h2>
+
+        <h2>教育背景</h2>
         <ul>
-            <li>HTML 和基础网页开发</li>
-            <li>探索 AI 和生成式技术</li>
+            <li>河南师范大学，生态学本科，2015.09 - 2019.06</li>
         </ul>
-        <h2>项目经历</h2>
+
+        <h2>工作经验</h2>
         <ul>
-            <li>GameJam 参赛作品</li>
-            <li>自主研发的游戏编辑器</li>
+            <li>
+                <strong>YAHAHA - 招聘HR</strong> (2022.08 - 至今)
+                <ul>
+                    <li>独立负责多个团队的招聘工作</li>
+                    <li>制定并实施招聘策略，与业务部门紧密合作</li>
+                    <li>优化人才库，分析市场状况</li>
+                    <li>在职期间招聘正式员工32人，实习生若干</li>
+                </ul>
+            </li>
+            <li>
+                <strong>上海科锐福克斯 - 猎头顾问</strong> (2022.07 - 2022.07)
+                <ul>
+                    <li>服务字节、B站、虎扑等客户，推进多位候选人进入终面或offer流程</li>
+                </ul>
+            </li>
+            <li>
+                <strong>募齐人才（imatch） - 猎头顾问</strong> (2021.11 - 2022.06)
+                <ul>
+                    <li>负责C端产品高P岗位招聘，推荐113份简历，推面比例55.8%</li>
+                </ul>
+            </li>
+            <li>
+                <strong>博略咨询 - 猎头顾问</strong> (2019.08 - 2021.11)
+                <ul>
+                    <li>累计业绩80w，成功交付多名前后端开发工程师、产品经理等岗位</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>校内经验</h2>
+        <ul>
+            <li>河南师范大学生态学系年级长 (2015.09 - 2019.06)</li>
+            <li>河南师范大学国旗护卫队队长 (2015.10 - 2017.10)</li>
         </ul>
     </div>
+    <footer>
+        <p>&copy; 2024 郭栋. All rights reserved.</p>
+    </footer>
 </body>
 </html>
