@@ -6,7 +6,7 @@
     <title>郭栋的个人简历</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -14,63 +14,99 @@
             background: #f4f4f9;
         }
         header {
-            background: #3f51b5;
+            background: linear-gradient(135deg, #3f51b5, #2196f3);
             color: #fff;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
+        }
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         header h1 {
             margin: 0;
+            font-size: 2.2em;
+        }
+        .basic-info {
+            margin-top: 10px;
+            font-size: 1.1em;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #3f51b5;
             border-bottom: 2px solid #3f51b5;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+            margin-top: 25px;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         ul li {
-            margin: 5px 0;
+            margin: 8px 0;
+            line-height: 1.8;
+        }
+        .work-experience li {
+            margin-bottom: 25px;
+        }
+        .work-title {
+            font-size: 1.1em;
+            color: #1a237e;
+            margin-bottom: 10px;
+        }
+        .work-period {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .work-description {
+            margin-left: 20px;
         }
         .contact a {
             color: #3f51b5;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #1a237e;
         }
         footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
+            padding: 20px;
             color: #777;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>郭栋的个人简历</h1>
+        <div class="header-content">
+            <h1>郭栋的个人简历</h1>
+            <div class="basic-info">
+                1996年10月 | 15301911102 | 540179312@qq.com
+            </div>
+        </div>
     </header>
     <div class="container">
         <h2>个人简介</h2>
         <ul>
             <li>AGI坚定信仰者</li>
-            <li>GPT4重度用户，善用GitHub，了解Transformer和RAG</li>
-            <li>熟悉Python，具备本地化部署LLM经验</li>
-            <li>2年海外科技创业公司招聘HR经验</li>
-            <li>3年猎头背景，专注中高端岗位招聘</li>
-        </ul>
-
-        <h2>联系方式</h2>
-        <ul class="contact">
-            <li>📧 Email: <a href="mailto:540179312@qq.com">540179312@qq.com</a></li>
-            <li>📱 电话: 15301911102</li>
+            <li>DeepSeek，ChatGPT重度用户，善用GitHub，了解Transformer，RAG；熟悉Python，有本地化部署LLM经验</li>
+            <li>两年以上科技创业公司招聘HR经验，善于从公司、业务的角度出发，挖掘合适候选人</li>
+            <li>3年猎头背景，专注于互联网大厂/创业公司中高端岗位，了解企业不同发展阶段对人才的需求及落地</li>
+            <li>制定策略并开展Ai+游戏相关领域高校合作以及Mapping，善于寻找高校适合公司业务的导师、团队以及高潜人才</li>
         </ul>
 
         <h2>教育背景</h2>
@@ -79,40 +115,60 @@
         </ul>
 
         <h2>工作经验</h2>
-        <ul>
+        <ul class="work-experience">
             <li>
-                <strong>YAHAHA - 招聘HR</strong> (2022.08 - 至今)
-                <ul>
-                    <li>独立负责多个团队的招聘工作</li>
-                    <li>制定并实施招聘策略，与业务部门紧密合作</li>
-                    <li>优化人才库，分析市场状况</li>
-                    <li>在职期间招聘正式员工32人，实习生若干</li>
+                <div class="work-title">
+                    <strong>YAHAHA</strong> - HR
+                    <span class="work-period">(2022.08 - 至今)</span>
+                </div>
+                <ul class="work-description">
+                    <li>独立负责技术/产品/策划/运营/市场/设计/美术团队搭建</li>
+                    <li>与各业务部门负责人紧密配合，针对公司以及业务进展情况制定招聘策略，并落地实施</li>
+                    <li>帮助管理层明确人才定位，人才画像及合理期望，面试官队伍搭建，建立和完善公司部门职责，亮点，及岗位介绍</li>
+                    <li>人才库优化、市场人才状况分析、人才储备计划等</li>
+                    <li>负责各阶段员工Review，提早发现/解决问题</li>
+                    <li>Mapping目标公司，绘制人才地图</li>
                 </ul>
+                <p><strong>工作成果：</strong>招聘正式员工30余人，实习生若干。入职所有人选均未通过猎头渠道</p>
             </li>
-            <li>
-                <strong>上海科锐福克斯 - 猎头顾问</strong> (2022.07 - 2022.07)
-                <ul>
-                    <li>服务字节、B站、虎扑等客户，推进多位候选人进入终面或offer流程</li>
-                </ul>
-            </li>
-            <li>
-                <strong>募齐人才（imatch） - 猎头顾问</strong> (2021.11 - 2022.06)
-                <ul>
-                    <li>负责C端产品高P岗位招聘，推荐113份简历，推面比例55.8%</li>
-                </ul>
-            </li>
-            <li>
-                <strong>博略咨询 - 猎头顾问</strong> (2019.08 - 2021.11)
-                <ul>
-                    <li>累计业绩80w，成功交付多名前后端开发工程师、产品经理等岗位</li>
-                </ul>
-            </li>
-        </ul>
 
-        <h2>校内经验</h2>
-        <ul>
-            <li>河南师范大学生态学系年级长 (2015.09 - 2019.06)</li>
-            <li>河南师范大学国旗护卫队队长 (2015.10 - 2017.10)</li>
+            <li>
+                <div class="work-title">
+                    <strong>上海科锐福克斯</strong> - 猎头顾问
+                    <span class="work-period">(2022.07 - 2022.07)</span>
+                </div>
+                <ul class="work-description">
+                    <li>主要服务于字节、B站、虎扑、亚朵等客户</li>
+                    <li>多位候选人推进到终面、offer流程</li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="work-title">
+                    <strong>募齐人才（imatch）</strong> - 猎头顾问
+                    <span class="work-period">(2021.11 - 2022.06)</span>
+                </div>
+                <ul class="work-description">
+                    <li>服务于字节、腾讯、阿里、小红书、B站、虎扑、网易、元象、YAHAHA等公司</li>
+                    <li>负责C端产品高P岗位招聘，包括元宇宙赛道产品负责人、社区产品负责人、社交产品负责人、用户增长/游戏化产品负责人、商业化产品负责人</li>
+                    <li>在职期间简历推荐113份，推面比例55.8%，F2F25次，offer四份</li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="work-title">
+                    <strong>博略咨询</strong> - 猎头顾问
+                    <span class="work-period">(2019.08 - 2021.11)</span>
+                </div>
+                <ul class="work-description">
+                    <li>主要服务于腾讯、微众银行、阅文集团、陌陌、小红书等互联网公司</li>
+                    <li>独立负责互联网产品、技术的岗位交付</li>
+                    <li>通过LinkedIn、脉脉、人才mapping等方式确定目标候选人</li>
+                    <li>负责候选人全流程跟进与辅导</li>
+                    <li>成功入职多名前后端开发工程师、产品经理、运营经理、商务负责人等岗位</li>
+                    <li>累计业绩80w</li>
+                </ul>
+            </li>
         </ul>
     </div>
     <footer>
