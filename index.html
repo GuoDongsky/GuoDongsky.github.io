@@ -49,6 +49,15 @@
         .basic-info {
             font-size: 1.1em;
             opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .intro-text {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 1.5rem;
         }
 
         .container {
@@ -196,9 +205,11 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>郭栋的个人简历</h1>
+            <h1>郭栋</h1>
             <div class="basic-info">
-                1996年10月 | 15301911102 | 540179312@qq.com
+                <span>电话：15301911102</span>
+                <span>邮箱：540179312@qq.com</span>
+                <span>出生年月：1996.10</span>
             </div>
         </div>
     </header>
@@ -206,70 +217,58 @@
     <div class="container">
         <section class="section">
             <h2>个人简介</h2>
-            <ul class="intro-list">
-                <li>AGI坚定信仰者</li>
-                <li>DeepSeek，ChatGPT重度用户，善用GitHub，了解Transformer，RAG；熟悉Python，有本地化部署LLM经验</li>
-                <li>两年以上科技创业公司招聘HR经验，善于从公司、业务的角度出发，挖掘合适候选人</li>
-                <li>3年猎头背景，专注于互联网大厂/创业公司中高端岗位，了解企业不同发展阶段对人才的需求及落地</li>
-                <li>制定策略并开展Ai+游戏相关领域高校合作以及Mapping，善于寻找高校适合公司业务的导师、团队以及高潜人才</li>
-            </ul>
+            <div class="intro-text">
+                <p>AGI坚定信仰者，熟练使用DeepSeek、ChatGPT等工具，具备本地化部署LLM经验，能够将AI技术应用于招聘与人才管理。拥有两年以上科技创业公司HR经验及三年猎头背景，熟悉AI、互联网、游戏等领域的人才需求，善于从业务视角挖掘高潜人才，并通过高校合作与人才Mapping为公司注入创新活力。</p>
+            </div>
         </section>
 
         <section class="section">
             <h2>工作经验</h2>
             <div class="work-item">
                 <div class="work-title">
-                    <span class="company-name">YAHAHA - HR</span>
+                    <span class="company-name">YAHAHA</span>
                     <span class="work-period">2022.08 - 至今</span>
                 </div>
+                <div class="position">招聘HR</div>
                 <ul class="work-description">
-                    <li>独立负责技术/产品/策划/运营/市场/设计/美术团队搭建</li>
-                    <li>与各业务部门负责人紧密配合，针对公司以及业务进展情况制定招聘策略，并落地实施</li>
-                    <li>帮助管理层明确人才定位，人才画像及合理期望，面试官队伍搭建，建立和完善公司部门职责，亮点，及岗位介绍</li>
-                    <li>人才库优化、市场人才状况分析、人才储备计划等</li>
-                    <li>负责各阶段员工Review，提早发现/解决问题</li>
-                    <li>Mapping目标公司，绘制人才地图</li>
+                    <li>独立负责产品、运营、美术、策划等7个团队的团队搭建，成功招聘40余名正式员工（近半数为资深员工）及50名实习生，所有人选均通过自有渠道而非猎头，节约大量招聘成本</li>
+                    <li>针对公司AI+游戏业务，制定精准招聘策略，成功引入多位游戏化产品专家，推动新产品上线</li>
+                    <li>通过定期员工Review，发现并解决团队协作问题，提升团队效率</li>
+                    <li>优化人才库，绘制目标公司人才地图，提升招聘精准度</li>
                 </ul>
-                <div class="achievement">
-                    <strong>工作成果：</strong>招聘正式员工30余人，实习生若干。入职所有人选均未通过猎头渠道
-                </div>
             </div>
 
             <div class="work-item">
                 <div class="work-title">
-                    <span class="company-name">上海科锐福克斯 - 猎头顾问</span>
+                    <span class="company-name">上海科锐福克斯</span>
                     <span class="work-period">2022.07 - 2022.07</span>
                 </div>
+                <div class="position">猎头顾问</div>
                 <ul class="work-description">
-                    <li>主要服务于字节、B站、虎扑、亚朵等客户</li>
-                    <li>多位候选人推进到终面、offer流程</li>
+                    <li>服务于字节、B站、虎扑、亚朵等公司，多位候选人推进到终面、offer流程</li>
                 </ul>
             </div>
 
             <div class="work-item">
                 <div class="work-title">
-                    <span class="company-name">募齐人才（imatch）- 猎头顾问</span>
+                    <span class="company-name">募齐人才（imatch）</span>
                     <span class="work-period">2021.11 - 2022.06</span>
                 </div>
+                <div class="position">猎头顾问</div>
                 <ul class="work-description">
-                    <li>服务于字节、腾讯、阿里、小红书、B站、虎扑、网易、元象、YAHAHA等公司</li>
-                    <li>负责C端产品高P岗位招聘，包括元宇宙赛道产品负责人、社区产品负责人、社交产品负责人、用户增长/游戏化产品负责人、商业化产品负责人</li>
-                    <li>在职期间简历推荐113份，推面比例55.8%，F2F25次，offer四份</li>
+                    <li>主要服务于字节、腾讯、阿里、小红书、网易、元象、yahaha等公司，负责产品高P岗位招聘</li>
+                    <li>在职期间简历推荐113份，推面比例55.8%，F2F25次，成功帮助4位候选人获得offer，岗位包括元宇宙赛道产品负责人等</li>
                 </ul>
             </div>
 
             <div class="work-item">
                 <div class="work-title">
-                    <span class="company-name">博略咨询 - 猎头顾问</span>
+                    <span class="company-name">博略咨询</span>
                     <span class="work-period">2019.08 - 2021.11</span>
                 </div>
+                <div class="position">猎头顾问</div>
                 <ul class="work-description">
-                    <li>主要服务于腾讯、微众银行、阅文集团、陌陌、小红书等互联网公司</li>
-                    <li>独立负责互联网产品、技术的岗位交付</li>
-                    <li>通过LinkedIn、脉脉、人才mapping等方式确定目标候选人</li>
-                    <li>负责候选人全流程跟进与辅导</li>
-                    <li>成功入职多名前后端开发工程师、产品经理、运营经理、商务负责人等岗位</li>
-                    <li>累计业绩80w</li>
+                    <li>服务腾讯、小红书、字节等客户，成功交付多名前后端开发工程师及产品经理岗位，累计业绩80万</li>
                 </ul>
             </div>
         </section>
