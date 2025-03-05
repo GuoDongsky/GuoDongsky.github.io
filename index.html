@@ -5,87 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>郭栋的个人简历</title>
     <style>
-        body {
-            font-family: "Microsoft YaHei", Arial, sans-serif;
-            line-height: 1.6;
+        :root {
+            --primary-color: #2196f3;
+            --secondary-color: #1976d2;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
-            background: #f4f4f9;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
         header {
-            background: linear-gradient(135deg, #3f51b5, #2196f3);
-            color: #fff;
-            padding: 2rem 0;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 4rem 2rem;
             text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 2rem;
         }
+
         .header-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1rem;
+            font-weight: 600;
         }
+
         .basic-info {
-            margin-top: 10px;
             font-size: 1.1em;
+            opacity: 0.9;
         }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
         h2 {
-            color: #3f51b5;
-            border-bottom: 2px solid #3f51b5;
-            padding-bottom: 8px;
-            margin-top: 25px;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8em;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
         }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 3px;
+        }
+
         ul {
             list-style: none;
-            padding: 0;
         }
-        ul li {
-            margin: 8px 0;
-            line-height: 1.8;
+
+        .intro-list li {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            position: relative;
         }
-        .work-experience li {
-            margin-bottom: 25px;
+
+        .intro-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
+
+        .work-item {
+            margin-bottom: 2rem;
+        }
+
         .work-title {
-            font-size: 1.1em;
-            color: #1a237e;
-            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
         }
+
+        .company-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
         .work-period {
             color: #666;
-            font-size: 0.9em;
         }
+
         .work-description {
-            margin-left: 20px;
+            padding-left: 1rem;
+            border-left: 2px solid #e0e0e0;
         }
-        .contact a {
-            color: #3f51b5;
-            text-decoration: none;
-            transition: color 0.3s;
+
+        .work-description li {
+            margin: 0.8rem 0;
         }
-        .contact a:hover {
-            color: #1a237e;
+
+        .achievement {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 6px;
         }
+
         footer {
             text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            color: #777;
+            padding: 2rem;
+            color: #666;
+            margin-top: 3rem;
         }
-        @media (max-width: 600px) {
+
+        @media (max-width: 768px) {
+            header {
+                padding: 3rem 1rem;
+            }
+
             .container {
-                margin: 10px;
-                padding: 15px;
+                padding: 0 1rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .work-title {
+                flex-direction: column;
+            }
+
+            .work-period {
+                margin-top: 0.5rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .section {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+
+            header {
+                clip-path: none;
+                background: white;
+                color: var(--text-color);
+                padding: 2rem;
             }
         }
     </style>
@@ -99,27 +202,25 @@
             </div>
         </div>
     </header>
+
     <div class="container">
-        <h2>个人简介</h2>
-        <ul>
-            <li>AGI坚定信仰者</li>
-            <li>DeepSeek，ChatGPT重度用户，善用GitHub，了解Transformer，RAG；熟悉Python，有本地化部署LLM经验</li>
-            <li>两年以上科技创业公司招聘HR经验，善于从公司、业务的角度出发，挖掘合适候选人</li>
-            <li>3年猎头背景，专注于互联网大厂/创业公司中高端岗位，了解企业不同发展阶段对人才的需求及落地</li>
-            <li>制定策略并开展Ai+游戏相关领域高校合作以及Mapping，善于寻找高校适合公司业务的导师、团队以及高潜人才</li>
-        </ul>
+        <section class="section">
+            <h2>个人简介</h2>
+            <ul class="intro-list">
+                <li>AGI坚定信仰者</li>
+                <li>DeepSeek，ChatGPT重度用户，善用GitHub，了解Transformer，RAG；熟悉Python，有本地化部署LLM经验</li>
+                <li>两年以上科技创业公司招聘HR经验，善于从公司、业务的角度出发，挖掘合适候选人</li>
+                <li>3年猎头背景，专注于互联网大厂/创业公司中高端岗位，了解企业不同发展阶段对人才的需求及落地</li>
+                <li>制定策略并开展Ai+游戏相关领域高校合作以及Mapping，善于寻找高校适合公司业务的导师、团队以及高潜人才</li>
+            </ul>
+        </section>
 
-        <h2>教育背景</h2>
-        <ul>
-            <li>河南师范大学，生态学本科，2015.09 - 2019.06</li>
-        </ul>
-
-        <h2>工作经验</h2>
-        <ul class="work-experience">
-            <li>
+        <section class="section">
+            <h2>工作经验</h2>
+            <div class="work-item">
                 <div class="work-title">
-                    <strong>YAHAHA</strong> - HR
-                    <span class="work-period">(2022.08 - 至今)</span>
+                    <span class="company-name">YAHAHA - HR</span>
+                    <span class="work-period">2022.08 - 至今</span>
                 </div>
                 <ul class="work-description">
                     <li>独立负责技术/产品/策划/运营/市场/设计/美术团队搭建</li>
@@ -129,36 +230,38 @@
                     <li>负责各阶段员工Review，提早发现/解决问题</li>
                     <li>Mapping目标公司，绘制人才地图</li>
                 </ul>
-                <p><strong>工作成果：</strong>招聘正式员工30余人，实习生若干。入职所有人选均未通过猎头渠道</p>
-            </li>
+                <div class="achievement">
+                    <strong>工作成果：</strong>招聘正式员工30余人，实习生若干。入职所有人选均未通过猎头渠道
+                </div>
+            </div>
 
-            <li>
+            <div class="work-item">
                 <div class="work-title">
-                    <strong>上海科锐福克斯</strong> - 猎头顾问
-                    <span class="work-period">(2022.07 - 2022.07)</span>
+                    <span class="company-name">上海科锐福克斯 - 猎头顾问</span>
+                    <span class="work-period">2022.07 - 2022.07</span>
                 </div>
                 <ul class="work-description">
                     <li>主要服务于字节、B站、虎扑、亚朵等客户</li>
                     <li>多位候选人推进到终面、offer流程</li>
                 </ul>
-            </li>
+            </div>
 
-            <li>
+            <div class="work-item">
                 <div class="work-title">
-                    <strong>募齐人才（imatch）</strong> - 猎头顾问
-                    <span class="work-period">(2021.11 - 2022.06)</span>
+                    <span class="company-name">募齐人才（imatch）- 猎头顾问</span>
+                    <span class="work-period">2021.11 - 2022.06</span>
                 </div>
                 <ul class="work-description">
                     <li>服务于字节、腾讯、阿里、小红书、B站、虎扑、网易、元象、YAHAHA等公司</li>
                     <li>负责C端产品高P岗位招聘，包括元宇宙赛道产品负责人、社区产品负责人、社交产品负责人、用户增长/游戏化产品负责人、商业化产品负责人</li>
                     <li>在职期间简历推荐113份，推面比例55.8%，F2F25次，offer四份</li>
                 </ul>
-            </li>
+            </div>
 
-            <li>
+            <div class="work-item">
                 <div class="work-title">
-                    <strong>博略咨询</strong> - 猎头顾问
-                    <span class="work-period">(2019.08 - 2021.11)</span>
+                    <span class="company-name">博略咨询 - 猎头顾问</span>
+                    <span class="work-period">2019.08 - 2021.11</span>
                 </div>
                 <ul class="work-description">
                     <li>主要服务于腾讯、微众银行、阅文集团、陌陌、小红书等互联网公司</li>
@@ -168,9 +271,17 @@
                     <li>成功入职多名前后端开发工程师、产品经理、运营经理、商务负责人等岗位</li>
                     <li>累计业绩80w</li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>教育背景</h2>
+            <ul class="intro-list">
+                <li>河南师范大学，生态学本科，2015.09 - 2019.06</li>
+            </ul>
+        </section>
     </div>
+
     <footer>
         <p>&copy; 2024 郭栋. All rights reserved.</p>
     </footer>
